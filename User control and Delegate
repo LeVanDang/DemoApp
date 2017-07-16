@@ -1,4 +1,5 @@
- ---In user control-----------
+---- VB.NET-----
+---In user control-----------
  Public Delegate Sub Myclick(sender As Object, e As EventArgs)
     Public Event somethingClick As Myclick
      Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
