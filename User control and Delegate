@@ -1,0 +1,11 @@
+ ---In user control-----------
+ Public Delegate Sub Myclick(sender As Object, e As EventArgs)
+    Public Event somethingClick As Myclick
+     Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        RaiseEvent somethingClick(sender, e)
+    End Sub
+    --------------------
+    In page import user control
+    Protected Sub Myeven(sender As Object, e As EventArgs) Handles UserControl11.somethingClick
+        MsgBox("chao my event")
+    End Sub
